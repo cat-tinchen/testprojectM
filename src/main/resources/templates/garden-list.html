@@ -1,9 +1,15 @@
 <html>
-    <head><title>Home Page</title>
+<head><title>Home Page</title>
+    <link rel="stylesheet" href="style/theme.css">
+    <style>
+        h1 {
+         font-family: arial;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Hello !</h1>
+<h1 style="font-size:40px;">Garden !</h1>
 <p>Welcome to <span th:text="${appName}">Our App bla</span></p>
 
 <p>Or another one <span th:text="${@environment.getProperty('spring.datasource.driver-class-name')}">some property</span></p>
